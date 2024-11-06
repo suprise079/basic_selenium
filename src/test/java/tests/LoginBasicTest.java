@@ -1,6 +1,7 @@
 package tests;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -18,14 +19,12 @@ import org.testng.annotations.*;
  * So this has to be changed accordingly
  */
 public class LoginBasicTest {
-	//IMPORTANT: Please download a Chrome driver and set this variable to the full path to the file
-	private final static String CHROME_DRIVER_FULL_PATH = "/Users/leonardolanni/Downloads/chromedriver_113_m1";
-	//private final static String GECKO_DRIVER_FULL_PATH = "/Users/leonardolanni/Downloads/geckodriver";
+
 	private WebDriver driver;
 
 	@BeforeTest
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_FULL_PATH);
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		//System.setProperty("webdriver.gecko.driver", GECKO_DRIVER_FULL_PATH);
 		//driver = new FirefoxDriver();
