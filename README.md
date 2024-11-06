@@ -31,3 +31,4 @@ The screen command line output will provide the test logs and information.
 
 Note: on some OS like on a Mac, at the first execution please remember to give the rights from the security checkings to execute the Chrome or Gecko Driver executable file.
 
+"# basic_selenium" 
