@@ -67,7 +67,7 @@ public class LoginBasicTest {
 		
 		//Pause the execution for 2 seconds to show the logged in page
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(100000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
