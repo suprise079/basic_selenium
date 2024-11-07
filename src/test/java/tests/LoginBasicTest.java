@@ -65,9 +65,9 @@ public class LoginBasicTest {
 		System.out.println(" 4.2 Page url contains 'inventory'");
 		Assert.assertEquals(driver.getCurrentUrl().contains("inventory"), true);
 		
-		//Pause the execution for 2 seconds to show the logged in page
+		//Pause the execution for 2 minute to show the logged in page
 		try {
-			Thread.sleep(100000);
+			Thread.sleep(20000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
